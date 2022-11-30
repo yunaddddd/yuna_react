@@ -1,6 +1,6 @@
 /*import React from "react";
 import Routes from "./RouteMap";
-import styled from "styled-components";
+import styled from "";
 import './common.scss'
 
 const Title = styled.h1`
@@ -26,9 +26,11 @@ export default App;*/
 import React from "react";
 import {useState} from "react";
 import {ColoredMessage} from "./components/ColoredMessage";
+import {GlobalStyleComponent} from "styled-components";
 
-
-
+const GlobalStyle = createGlobalStyle`
+body, html{margin:0;padding:0}
+`
 
 const App = () => {
     console.log("렌더링")
